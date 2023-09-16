@@ -17,7 +17,7 @@ Foglendes wird benötigt:
 ## Einrichten der Visualisierung
 - Zunächst muss dafür gesorgt werden, dass die benötigten Daten regelmäßig per MQTT versendet werden. Das erledigt open3e mit folgendem Aufruf: `python3 Open3Eclient.py -c can0 -dev vcal -m localhost:1883:open3e/vitocal -mfstr {didNumber:04d}_{didName} -t 30 -r 268,269,271,274,282,284,318,320,321,322,324,325,355,381,389,391,396,531,902,1043,1339,1607,1643,1769,1770,1771,1772,1775,1776,1815,1816,1817,2320,2333,2334,2346,2351,2352,2369,2370,2487,2488,2495,2496,2735,2744,2746,3016`
 - Damit werden die Daten alle 30 Sekunden per MQTT an den lokalen Broker gesendet. Z.B. die Temperatur am Eingang des Kompressors wird dann mit folgender Message vesendet: `open3e/vitocal/0321_CompressorInletTemperatureSensor`
-- Für die Visualisierung in vis müssen die Dateien unter `img/` nach `vis.0.main.img` hochgeladen werden und der Inhalt von `view/Kaeltekreis.json` als View importiert werden.
+- Für die Visualisierung in vis müssen die Dateien unter `img/` nach `/vis.0/main/img/` hochgeladen werden und der Inhalt von `view/Kaeltekreis.json` als View importiert werden.
 - Ggf. die json-Struktur vor dem Import editieren (Suchen/Ersetzen), falls ein anderer MQTT-Broker als `mqtt-client.0` oder eine andere vis-Instanz verwendet wird.
 
 ## Läuft
