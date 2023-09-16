@@ -9,13 +9,13 @@
         "gridSize": "",
         "snapType": null,
         "alwaysRender": false,
-        "useAsDefault": true
+        "useAsDefault": false
     },
     "widgets": {
         "e00001": {
             "tpl": "tplStatefulImage8",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.2351_HeatPumpCompressor",
+                "oid": "mqtt-client.0.open3e.vitocal.2351_HeatPumpCompressor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": false,
@@ -86,7 +86,7 @@
         "e00002": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.1775_PrimaryCircuitFanOne",
+                "oid": "mqtt-client.0.open3e.vitocal.1775_PrimaryCircuitFanOne",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -158,7 +158,7 @@
         "e00003": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.1776_PrimaryCircuitFanTwo",
+                "oid": "mqtt-client.0.open3e.vitocal.1776_PrimaryCircuitFanTwo",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -230,7 +230,7 @@
         "e00004": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.2346_CompressorSpeedPercent",
+                "oid": "mqtt-client.0.open3e.vitocal.2346_CompressorSpeedPercent",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -302,7 +302,7 @@
         "e00005": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.1043_AllengraSensor",
+                "oid": "mqtt-client.0.open3e.vitocal.1043_AllengraSensor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -376,7 +376,7 @@
         "e00006": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.0321_CompressorInletTemperatureSensor",
+                "oid": "mqtt-client.0.open3e.vitocal.0321_CompressorInletTemperatureSensor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -448,7 +448,7 @@
         "e00007": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.0324_CompressorOutletTemperatureSensor",
+                "oid": "mqtt-client.0.open3e.vitocal.0324_CompressorOutletTemperatureSensor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -520,7 +520,7 @@
         "e00008": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.1772_CompressorOilTemperatureSensor",
+                "oid": "mqtt-client.0.open3e.vitocal.1772_CompressorOilTemperatureSensor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -592,7 +592,7 @@
         "e00009": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.0269_ReturnTemperatureSensor",
+                "oid": "mqtt-client.0.open3e.vitocal.0269_ReturnTemperatureSensor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -664,7 +664,7 @@
         "e00010": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.0268_FlowTemperatureSensor",
+                "oid": "mqtt-client.0.open3e.vitocal.0268_FlowTemperatureSensor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -736,7 +736,7 @@
         "e00011": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.1769_PrimaryInletTemperatureSensor",
+                "oid": "mqtt-client.0.open3e.vitocal.1769_PrimaryInletTemperatureSensor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -808,7 +808,7 @@
         "e00012": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.2333_EconomizerLiquidTemperatureSensor",
+                "oid": "mqtt-client.0.open3e.vitocal.2333_EconomizerLiquidTemperatureSensor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -880,7 +880,7 @@
         "e00013": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.0320_PrimaryHeatExchangerLiquidTemperatureSensor",
+                "oid": "mqtt-client.0.open3e.vitocal.0320_PrimaryHeatExchangerLiquidTemperatureSensor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -952,7 +952,7 @@
         "e00014": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.2334_EvaporatorVaporTemperatureSensor",
+                "oid": "mqtt-client.0.open3e.vitocal.2334_EvaporatorVaporTemperatureSensor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -1024,7 +1024,7 @@
         "e00015": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.0355_SecondaryHeatExchangerLiquidTemperatureSensor",
+                "oid": "mqtt-client.0.open3e.vitocal.0355_SecondaryHeatExchangerLiquidTemperatureSensor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -1096,7 +1096,7 @@
         "e00016": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.0322_CompressorInletPressureSensor",
+                "oid": "mqtt-client.0.open3e.vitocal.0322_CompressorInletPressureSensor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -1170,7 +1170,7 @@
         "e00017": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.0325_CompressorOutletPressureSensor",
+                "oid": "mqtt-client.0.open3e.vitocal.0325_CompressorOutletPressureSensor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -1245,7 +1245,7 @@
         "e00018": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.0389_ElectronicExpansionValveOneCurrentPositionPercent",
+                "oid": "mqtt-client.0.open3e.vitocal.0389_ElectronicExpansionValveOneCurrentPositionPercent",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -1317,7 +1317,7 @@
         "e00019": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.0391_ElectronicExpansionValveTwoCurrentPositionPercent",
+                "oid": "mqtt-client.0.open3e.vitocal.0391_ElectronicExpansionValveTwoCurrentPositionPercent",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -1389,7 +1389,7 @@
         "e00020": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.2488_CurrentElectricalPowerConsumptionSystem",
+                "oid": "mqtt-client.0.open3e.vitocal.2488_CurrentElectricalPowerConsumptionSystem",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -1463,7 +1463,7 @@
         "e00021": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.2496_CurrentThermalCapacitySystem",
+                "oid": "mqtt-client.0.open3e.vitocal.2496_CurrentThermalCapacitySystem",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -1537,7 +1537,7 @@
         "e00022": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.0271_DomesticHotWaterSensor",
+                "oid": "mqtt-client.0.open3e.vitocal.0271_DomesticHotWaterSensor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -1609,7 +1609,7 @@
         "e00023": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.3016_HeatingBufferTemperatureSensor",
+                "oid": "mqtt-client.0.open3e.vitocal.3016_HeatingBufferTemperatureSensor",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -1681,7 +1681,7 @@
         "e00024": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.0381_CentralHeatingPump",
+                "oid": "mqtt-client.0.open3e.vitocal.0381_CentralHeatingPump",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -1891,7 +1891,7 @@
         "e00027": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "mqtt-client.0.open3e.VitoCal.2487_CurrentElectricalPowerConsumptionElectricHeater",
+                "oid": "mqtt-client.0.open3e.vitocal.2487_CurrentElectricalPowerConsumptionElectricHeater",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -1952,7 +1952,7 @@
                 "html_append_plural": " W"
             },
             "style": {
-                "left": "588px",
+                "left": "587px",
                 "top": "186px",
                 "color": "#ffffff",
                 "text-align": "center",
@@ -1963,9 +1963,8 @@
             "widgetSet": "basic"
         },
         "e00028": {
-            "tpl": "tplStatefulImage8",
+            "tpl": "tplImage",
             "data": {
-                "oid": "alias.0.open3e.VitoCal._002_ElectricHeaterActive",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": false,
@@ -1975,8 +1974,10 @@
                 "g_gestures": false,
                 "g_signals": false,
                 "g_last_change": false,
+                "visibility-cond": "==",
+                "visibility-val": 1,
+                "visibility-groups-action": "hide",
                 "refreshInterval": "0",
-                "count": "1",
                 "signals-cond-0": "==",
                 "signals-val-0": true,
                 "signals-icon-0": "/vis/signals/lowbattery.png",
@@ -2019,17 +2020,13 @@
                 "lc-border-color": "",
                 "lc-border-radius": 10,
                 "lc-zindex": 0,
-                "src_0": "/vis.0/main/img/Heizstab aus.png",
-                "src_1": "/vis.0/main/img/Heizstab ein.png",
-                "visibility-cond": "==",
-                "visibility-val": 1,
-                "visibility-groups-action": "hide"
+                "src": "/vis.0/main/img/Heizstab.png"
             },
             "style": {
-                "left": "610px",
-                "top": "113px",
-                "width": "32px",
-                "height": "69px"
+                "left": "609px",
+                "top": "114px",
+                "width": "32",
+                "height": "69"
             },
             "widgetSet": "basic"
         }
