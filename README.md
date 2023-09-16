@@ -2,7 +2,7 @@
 Visualisierung Kältekreislauf der Viessmann Wärmepumpe VitoCal 250 in ioBroker vis
 
 ## "Übersicht Kältekreislauf" als Visualisierung in ioBroker
-Ich habe den **Diagnosebildschirm der Wärempumpe** von der VitoCal abfotografiert und für ioBroker aufbereitet und erweitert. Zusätzlich wird der Betrieb des Heizstabs und die elektrischen und thermischen Leistungen angezeigt. Vielen Dank an Fa. Viessmann für die gelungene Darstellung des Kältekreislaufs!
+Ich habe den **Diagnosebildschirm der Wärempumpe** von der VitoCal abfotografiert und für ioBroker aufbereitet und erweitert. Zusätzlich wird der Betrieb des Heizstabs und die elektrischen und thermischen Leistungen angezeigt, sowie die Temperaturen der Pufferspeicher für Heizkreis 1 und Warmwasser. Vielen Dank an Fa. Viessmann für die gelungene Darstellung des Kältekreislaufs!
 
 Nach erfolgreicher Installation kann man die Arbeit der Wärmepumpe als ioBroker-Visualisierung live beobachten.
 
@@ -21,6 +21,6 @@ Foglendes wird benötigt:
 - Ggf. die json-Struktur vor dem Import editieren (Suchen/Ersetzen), falls ein anderer MQTT-Broker als `mqtt-client.0` oder eine andere vis-Instanz verwendet wird.
 
 ## Läuft
-Ein Screenshot der Visualisierung ist unter screeshot/ zu sehen.
+Ein Screenshot der Visualisierung ist unter `screenshot/` zu sehen.
 
 Die Darstellung passt sich an, abhängig davon, ob der Kompressor in Betrieb ist oder nicht. Das gilt auch für den Heizstab.
