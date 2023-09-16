@@ -23,4 +23,4 @@ Foglendes wird benötigt:
 ## Läuft
 Ein Screenshot der Visualisierung ist unter `screenshot/` zu sehen.
 
-Die Darstellung passt sich an, abhängig davon, ob der Kompressor in Betrieb ist oder nicht. Das gilt auch für den Heizstab.
+Die Darstellung passt sich an, abhängig davon, ob der Kompressor in Betrieb ist oder nicht.
