@@ -1,8 +1,8 @@
 # iob.vis.vitocal250
-Visualisierung Kältekreislauf der Viessmann Wärmepumpe VitoCal 250 in ioBroker vis
+Visualisierung des Kältekreislaufs der Viessmann Wärmepumpe VitoCal 250 in ioBroker vis
 
 ## "Übersicht Kältekreislauf" als Visualisierung in ioBroker
-Ich habe den **Diagnosebildschirm der Wärempumpe** von der VitoCal abfotografiert und für ioBroker aufbereitet und erweitert. Zusätzlich wird der Betrieb des Heizstabs und die elektrischen und thermischen Leistungen angezeigt, sowie die Temperaturen der Pufferspeicher für Heizkreis 1 und Warmwasser. Vielen Dank an Fa. Viessmann für die gelungene Darstellung des Kältekreislaufs!
+Ich habe den **Diagnosebildschirm der Wärempumpe** von der VitoCal abfotografiert, für ioBroker aufbereitet und erweitert. Zusätzlich werden der Betrieb des Heizstabs und die elektrischen und thermischen Leistungen angezeigt, sowie die Temperaturen der Pufferspeicher für Heizkreis 1 und Warmwasser. Vielen Dank an Fa. Viessmann für die gelungene Darstellung des Kältekreislaufs!
 
 Nach erfolgreicher Installation kann man die Arbeit der Wärmepumpe als ioBroker-Visualisierung live beobachten.
 
@@ -17,7 +17,7 @@ Foglendes wird benötigt:
 ## Einrichten der Visualisierung
 - Zunächst muss dafür gesorgt werden, dass die benötigten Daten regelmäßig per MQTT versendet werden. Das erledigt open3e mit folgendem Aufruf: `python3 Open3Eclient.py -c can0 -dev vcal -m localhost:1883:open3e/vitocal -mfstr {didNumber:04d}_{didName} -t 30 -r 268,269,271,274,284,318,320,321,322,324,325,355,381,389,391,396,1043,1769,1771,1772,1775,1776,2333,2334,2346,2351,2487,2488,2496,2735,3016`
 - Damit werden die Daten alle 30 Sekunden per MQTT an den lokalen Broker gesendet. Z.B. die Temperatur am Eingang des Kompressors wird dann mit folgender Message vesendet: `open3e/vitocal/0321_CompressorInletTemperatureSensor`
-- Für die Visualisierung in vis müssen die Dateien unter `img/` nach `/vis.0/main/img/` hochgeladen werden und der Inhalt von `view/Kaeltekreis.json` als View importiert werden.
+- Für die Visualisierung in vis müssen die Dateien aus diesem Repository unter `img/` nach `/vis.0/main/img/` hochgeladen werden und der Inhalt von `view/Kaeltekreis.json` als View importiert werden.
 - Ggf. die json-Struktur vor dem Import editieren (Suchen/Ersetzen), falls ein anderer MQTT-Broker als `mqtt-client.0` oder eine andere vis-Instanz verwendet wird.
 
 ## Läuft
