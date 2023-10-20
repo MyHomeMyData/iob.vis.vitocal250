@@ -20,6 +20,7 @@ Foglendes wird benötigt:
 - Für die Visualisierung in vis müssen die Dateien aus diesem Repository unter `img/` nach `/vis.0/main/img/` hochgeladen werden, dazu verwendet man am besten den Dateimanager im Vis Editor.
 - Nun erzeugt man eine View und importiert den Inhalt von `view/Kaeltekreis.json` per "copy & paste".
 - Ggf. die json-Struktur aus `view/Kaeltekreis.json` vor dem Importieren editieren (Suchen/Ersetzen), falls ein anderer MQTT-Broker als `mqtt-client.0` oder eine andere vis-Instanz verwendet wird.
+- Abhängig von der verwendeten Version von open3e muss noch eine Änderung an den Objekt-Eigenschaften von "2351_HeatPumpCompressor" vorgenommen werden: Format -> Number, Step -> 1. Siehe Issue#1.
 
 ## Läuft
 Ein Screenshot der Visualisierung ist unter `screenshot/` zu sehen.
