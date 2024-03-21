@@ -1,6 +1,8 @@
 # iob.vis.vitocal250
 Visualisierung des Kältekreislaufs der Viessmann Wärmepumpe VitoCal 250 in ioBroker vis
 
+![image](https://github.com/MyHomeMyData/iob.vis.vitocal250/assets/144950531/ae8db68a-1c3b-445d-9f34-360ff7229547)
+
 ## "Übersicht Kältekreislauf" als Visualisierung in ioBroker
 Ich habe den **Diagnosebildschirm der Wärempumpe** von der VitoCal abfotografiert, für ioBroker aufbereitet und erweitert. Zusätzlich werden der Betrieb des Heizstabs und die elektrischen und thermischen Leistungen angezeigt, sowie die Temperaturen der Pufferspeicher für Heizkreis 1 und Warmwasser. Vielen Dank an Fa. Viessmann für die gelungene Darstellung des Kältekreislaufs!
 
@@ -31,6 +33,4 @@ Foglendes wird benötigt:
 - Abhängig von der verwendeten Version von open3e muss noch eine Änderung an den Objekt-Eigenschaften von "2351_HeatPumpCompressor" vorgenommen werden: Format -> Number, Step -> 1. Siehe Issue#1.
 
 ## Läuft
-Ein Screenshot der Visualisierung ist unter `screenshot/` zu sehen.
-
-Die Darstellung passt sich an, abhängig davon, ob der Kompressor in Betrieb ist oder nicht.
+Die Darstellung passt sich an, abhängig davon, ob der Kompressor in Betrieb ist oder nicht. Auch die Betriebsart (Heizen oder Warmwasserbereitung) ist direkt erkennbar.
