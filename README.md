@@ -34,3 +34,16 @@ Foglendes wird benötigt:
 
 ## Läuft
 Die Darstellung passt sich an, abhängig davon, ob der Kompressor in Betrieb ist oder nicht. Auch die Betriebsart (Heizen oder Warmwasserbereitung) ist direkt erkennbar.
+
+## Optionale Erweiterung für den Heizstab
+Um auch das Heizstab-Symbol bei aktivem Betrieb optisch hervorzuheben, ist ein wenig Zuatzaufwand nötig.
+
+Für die Unterscheidung Heizstab aktiv / nicht aktiv wird ein Alias-Objekt angelegt. Es kann z.B. mit dem Namen `alias.0.open3e.vitocal.2487_CurrentElectricalPowerConsumptionElectricHeater_Active` erzeugt werden. Nun wird das Objekt mit dem Bleistiftsymbol editiert und eine Verknüpfung mit dem Datenpunkt 2487 angelegt. Die Funktion `(val == 0 ? 0:1)` wird verwendet, um die elektrische Leistung auf die Zustände 0 und 1 abzubilden. Bei Verwendung des ioBroker-Adapters sollte das so aussehen:
+
+![image](https://github.com/MyHomeMyData/iob.vis.vitocal250/assets/144950531/6ef84512-404c-4855-81e0-5397b2cf6b39)
+
+Im vis-Editor wird das vorhandene Widget `Image` für den Heizstab durch ein Widget `Image 8` ersetzt und die Einstellungen angepasst, so dass die `Object ID` auf das eben angelegte Alias-Objekt zeigt:
+
+![image](https://github.com/MyHomeMyData/iob.vis.vitocal250/assets/144950531/2a7e3954-8afe-4358-b876-4cd13054317e)
+
+Nun sollte das Heizstab-Symbol in rot dargestellt werden, wenn die elektrische Leistung des Heizstabs größer als 0 ist.
