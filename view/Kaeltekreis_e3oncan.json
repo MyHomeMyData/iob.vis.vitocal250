@@ -15,7 +15,7 @@
         "e00001": {
             "tpl": "tplStatefulImage8",
             "data": {
-                "oid": "e3oncan.0.vitocal.tree.2351_HeatPumpCompressor",
+                "oid": "e3oncan.0.vitocal.tree.2351_HeatPumpCompressor.PowerState",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": false,
