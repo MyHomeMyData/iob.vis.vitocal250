@@ -14,11 +14,13 @@ Um die benötigten Daten aus der VitoCal auszulesen, ist mir nur ein Weg bekannt
 Foglendes wird benötigt:
 - Linux-System mit ioBroker, z.B. auf einem Rapsberry Pi.
 - Bei Verwendung von open3e zusätzlich: Python 3 und MQTT-CLient
-- Installation des Adapters [e3oncan](https://github.com/MyHomeMyData/ioBroker.e3oncan) oder von [open3e](https://github.com/abnoname/open3e)
+- Installation des Adapters [e3oncan](https://github.com/MyHomeMyData/ioBroker.e3oncan) (Version 0.9.5 oder neuer) oder von [open3e](https://github.com/abnoname/open3e)
 - USB2CAN-Adapter
 
+**Hinweis:** Sollte die Visualisierung nach einem Update auf e3oncan V0.9.5 oder neuer nicht mehr funktionieren, bitte in der View `2351_HeatPumpCompressor` ersetzen durch `2351_HeatPumpCompressor.PowerState`.
+
 ## Einrichten der Visualisierung mit ioBroker-Adapter e3oncan
-- Der Adapter e3oncan ist im Beta-Repository von ioBroker verfügbar. Der Adapter benötige **keine** Installation von open3e.
+- Adapter e3oncan in ioBroker installieren. Der Adapter benötige **keine** Installation von open3e.
 - Um die benötigten Daten regelmäßig abzufragen, richtet man in der Adapterkonfiguration bei "Zuweisungen zum externen CAN-Adapter" eine Abfrage für das Gerät "HPMUMASTER" für folgende Datenpunkte ein: `268,269,271,274,284,318,320,321,322,324,325,355,381,389,391,396,1043,1769,1771,1772,1775,1776,2333,2334,2346,2351,2487,2488,2496,2735,3016`. Die Wiederholungszeit kann z.B. auf 30 Sekunden festgelegt werden.
 - Für die Visualisierung in vis müssen die Dateien aus diesem Repository unter `img/` nach `/vis.0/main/img/` hochgeladen werden, dazu verwendet man am besten den Dateimanager im Vis Editor.
 - Nun erzeugt man eine View und importiert den Inhalt von `view/Kaeltekreis_e3oncan.json` per "copy & paste".
