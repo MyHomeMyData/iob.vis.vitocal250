@@ -17,7 +17,7 @@ Foglendes wird benötigt:
 - Installation des Adapters [e3oncan](https://github.com/MyHomeMyData/ioBroker.e3oncan) (Version 0.9.5 oder neuer) oder von [open3e](https://github.com/abnoname/open3e)
 - USB2CAN-Adapter
 
-**Hinweis:** Sollte die Visualisierung nach einem Update auf e3oncan V0.9.5 oder neuer nicht mehr funktionieren, bitte in der View `2351_HeatPumpCompressor` ersetzen durch `2351_HeatPumpCompressor.PowerState`.
+**Hinweis:** Sollte die Visualisierung nach einem Update auf e3oncan V0.9.5 bzw. auf open3e V0.2.1 oder neuer nicht mehr funktionieren, bitte in der View `2351_HeatPumpCompressor` ersetzen durch `2351_HeatPumpCompressor.PowerState`.
 
 ## Einrichten der Visualisierung mit ioBroker-Adapter e3oncan
 - Adapter e3oncan in ioBroker installieren. Der Adapter benötige **keine** Installation von open3e.
@@ -33,6 +33,7 @@ Foglendes wird benötigt:
 - Nun erzeugt man eine View und importiert den Inhalt von `view/Kaeltekreis.json` per "copy & paste".
 - Ggf. die json-Struktur aus `view/Kaeltekreis.json` vor dem Importieren editieren (Suchen/Ersetzen), falls ein anderer MQTT-Broker als `mqtt-client.0` oder eine andere vis-Instanz verwendet wird.
 - Abhängig von der verwendeten Version von open3e muss noch eine Änderung an den Objekt-Eigenschaften von "2351_HeatPumpCompressor" vorgenommen werden: Format -> Number, Step -> 1. Siehe Issue#1.
+- Ab Version 0.2.1 von open3e hat der Datenpunkt 2351 die Bezeichnung "2351_HeatPumpCompressor.PowerState".
 
 ## Läuft
 Die Darstellung passt sich an, abhängig davon, ob der Kompressor in Betrieb ist oder nicht. Auch die Betriebsart (Heizen oder Warmwasserbereitung) ist direkt erkennbar.
