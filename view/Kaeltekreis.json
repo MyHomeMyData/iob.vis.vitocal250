@@ -15,7 +15,7 @@
         "e00001": {
             "tpl": "tplStatefulImage8",
             "data": {
-                "oid": "mqtt-client.0.open3e.vitocal.2351_HeatPumpCompressor",
+                "oid": "mqtt-client.0.open3e.vitocal.2351_HeatPumpCompressor.PowerState",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": false,
