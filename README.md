@@ -19,6 +19,8 @@ Foglendes wird benötigt:
 
 **Hinweis:** Sollte die Visualisierung nach einem Update auf e3oncan V0.9.5 bzw. auf open3e V0.2.1 oder neuer nicht mehr funktionieren, bitte in der View `2351_HeatPumpCompressor` ersetzen durch `2351_HeatPumpCompressor.PowerState`.
 
+**Update am 20.11.2025:** Das Symbol für die Lüfter ist im Betrieb jetzt animiert.
+
 ## Einrichten der Visualisierung mit ioBroker-Adapter e3oncan
 - Adapter e3oncan in ioBroker installieren. Der Adapter benötige **keine** Installation von open3e.
 - Um die benötigten Daten regelmäßig abzufragen, richtet man in der Adapterkonfiguration bei "Zuweisungen zum externen CAN-Adapter" eine Abfrage für das Gerät "HPMUMASTER" für folgende Datenpunkte ein: `268,269,271,274,284,318,320,321,322,324,325,355,381,389,391,396,1043,1769,1771,1772,1775,1776,2333,2334,2346,2351,2487,2488,2496,2735,3016`. Die Wiederholungszeit kann z.B. auf 30 Sekunden festgelegt werden.
