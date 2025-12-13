@@ -1684,7 +1684,7 @@
         "e00024": {
             "tpl": "tplValueFloat",
             "data": {
-                "oid": "e3oncan.0.vitocal.tree.0381_CentralHeatingPump",
+                "oid": "e3oncan.0.vitocal.tree.0381_CentralHeatingPump.Actual",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": true,
@@ -2181,3 +2181,4 @@
     "name": "Kaeltekreis",
     "filterList": []
 }
+
