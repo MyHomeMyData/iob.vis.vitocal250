@@ -3,6 +3,19 @@ Visualisierung des Kältekreislaufs der Viessmann Wärmepumpe VitoCal 250 in ioB
 
 ![image](https://github.com/MyHomeMyData/iob.vis.vitocal250/assets/144950531/ae8db68a-1c3b-445d-9f34-360ff7229547)
 
+## Update auf open3e Version 0.6.1 oder höher und auf ioBroker.e3oncan Version 0.11.0 oder höher
+
+Mit den gannenten Versionen wurde bei vielen Datenpunkten die Struktur aktualisiert. Details siehe [hier](https://github.com/MyHomeMyData/ioBroker.e3oncan/blob/main/lib/data-points.md#changelog-of-data-point-definitions). Davon betroffen sind auch folgende Datenpunkte, deren numerischer Wert nun unter dem Sub `.ID` erreichbar ist: 
+
+```
+2351_HeatPumpCompressor.PowerState.ID
+2735_FourThreeWayValveValveCurrentPosition.ID
+```
+
+Je nach individueller Konfiguration können noch weitere Datenpunkte betroffen sein. Nach entsprechenden Anpassungen in der VIS oder VIS-2 sollten die Visualisierung wieder wie gewohnt funktionieren.
+
+In den view-Templates wurde dies angepasst.
+
 ## "Übersicht Kältekreislauf" als Visualisierung in ioBroker
 Ich habe den **Diagnosebildschirm der Wärempumpe** von der VitoCal abfotografiert, für ioBroker aufbereitet und erweitert. Zusätzlich werden der Betrieb des Heizstabs und die elektrischen und thermischen Leistungen angezeigt, sowie die Temperaturen der Pufferspeicher für Heizkreis 1 und Warmwasser. Vielen Dank an Fa. Viessmann für die gelungene Darstellung des Kältekreislaufs!
 

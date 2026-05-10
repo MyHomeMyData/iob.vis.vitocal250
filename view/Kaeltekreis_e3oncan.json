@@ -15,7 +15,7 @@
         "e00001": {
             "tpl": "tplStatefulImage8",
             "data": {
-                "oid": "e3oncan.0.vitocal.tree.2351_HeatPumpCompressor.PowerState",
+                "oid": "e3oncan.0.vitocal.tree.2351_HeatPumpCompressor.PowerState.ID",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": false,
@@ -1830,7 +1830,7 @@
         "e00026": {
             "tpl": "tplStatefulImage8",
             "data": {
-                "oid": "e3oncan.0.vitocal.tree.2735_FourThreeWayValveValveCurrentPosition",
+                "oid": "e3oncan.0.vitocal.tree.2735_FourThreeWayValveValveCurrentPosition.ID",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": false,
@@ -1902,7 +1902,7 @@
         "e00027": {
             "tpl": "tplStatefulImage8",
             "data": {
-                "oid": "e3oncan.0.vitocal.tree.2735_FourThreeWayValveValveCurrentPosition",
+                "oid": "e3oncan.0.vitocal.tree.2735_FourThreeWayValveValveCurrentPosition.ID",
                 "g_fixed": false,
                 "g_visibility": false,
                 "g_css_font_text": false,
